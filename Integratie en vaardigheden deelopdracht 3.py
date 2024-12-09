@@ -35,7 +35,7 @@ ZPy_boot = 35 #zwaartepunt van de boot op de y-as
 
 #AFMETINGEN
 l_kraanboom = 32.5 #meter, lengte kraanboom
-l_boot = 80 #meter, lengte boot
+l_boot = 70 #meter, lengte boot
 b_boot = 20 #meter, breedte boot
 vrijboord = 3 #meter, diepte boot
 d_boot = 10 #meter, diepgang boot
