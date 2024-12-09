@@ -17,16 +17,16 @@ m_kraan = (m_kraanboom + m_kraanhuis + m_hijsgerei + m_windmolendeel) #kg, inclu
 m_scheepslading = 4 * 230000
 
 #ZWAARTEPUNTEN
-ZPx_windmolendeel = 24.25 #zwaartpunt van het hangende windmolendeel op de x-as
-ZPy_windmolendeel = 32 #zwaartepunt van het hangende windmolendeel op de y-as
-ZPx_kraanhuis = 8 #zwaartepunt van het kraanhuis op de x-as
-ZPy_kraanhuis = 32 #zwaartepunt van het kraanhuis op de y-as
-ZPx_kraanboom = 16.125 #zwaartepunt van de kraanboom op de x-as
-ZPy_kraanboom = 32 #zwaartepunt van de kraanboom op de y-as
-ZPx_hijsgerei = 24.25 #zwaartepunt van het hijsgerei op de x-as
-ZPy_hijsgerei = 32 #zwaartepunt van het hijsgerei op de y-as
+ZPx_windmolendeel = l_kraanboom*np.cos(60) #zwaartpunt van het hangende windmolendeel op de x-as
+ZPy_windmolendeel = l_boot/2 #zwaartepunt van het hangende windmolendeel op de y-as
+ZPx_kraanhuis = 0 #zwaartepunt van het kraanhuis op de x-as
+ZPy_kraanhuis = l_boot/2 #zwaartepunt van het kraanhuis op de y-as
+ZPx_kraanboom = l_kraanboom*np.cos(60)/2 #zwaartepunt van de kraanboom op de x-as
+ZPy_kraanboom = l_boot/2 #zwaartepunt van de kraanboom op de y-as
+ZPx_hijsgerei = ZPx_windmolendeel #zwaartepunt van het hijsgerei op de x-as
+ZPy_hijsgerei = l_boot/2 #zwaartepunt van het hijsgerei op de y-as
 ZPx_kraan = ((m_kraanhuis * ZPx_kraanhuis) + (m_kraanboom * ZPx_kraanboom) + (m_hijsgerei * ZPx_hijsgerei) + (ZPx_windmolendeel * m_windmolendeel)) / m_kraan #zwaartepunt van de kraan op de x-as, inclusief windmolendeel
-ZPy_kraan = 32 #zwaartepunt van de kraan op de y-as
+ZPy_kraan = l_boot/2 #zwaartepunt van de kraan op de y-as
 ZPx_boot = 10 #zwaartpunt van de boot op de x-as
 ZPy_boot = 35 #zwaartepunt van de boot op de y-as
 
