@@ -17,7 +17,7 @@ m_kraanhuis = (0.34*SWLmax) #kg
 m_kraanboom = (0.17*SWLmax) #kg
 m_hijsgerei = (0.06*SWLmax) #kg
 m_kraan = (m_kraanboom + m_kraanhuis + m_hijsgerei + m_windmolendeel) #kg, inclusief windmolendeel
-m_scheepslading = 6 * 230000
+m_scheepslading = 4 * 230000
 
 #ZWAARTEPUNTEN
 ZPx_windmolendeel = 24.25 #zwaartpunt van het hangende windmolendeel op de x-as
